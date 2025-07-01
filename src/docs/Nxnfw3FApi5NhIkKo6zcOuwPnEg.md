@@ -1,28 +1,27 @@
 ---
-title: 首页
+title: 应用商场
 slug: Nxnfw3FApi5NhIkKo6zcOuwPnEg
 sidebar_position: 0
-menu: customerService
 ---
 
 
-# 首页
+# 应用商场
 
-> 在首页你可以对空间进行说明，比如包含以下内容。
+使用最新的技术实现，非老旧代码，从0实现。接受定制。
 
-# 🎯  愿景和目标
+可选技术如下
 
-> 这里你可以描述知识空间建设的目标和意义，有利于团队成员理解目标并朝着目标努力。
+数据库:Mysql,Postgre<em>SQL,redis,mongodb</em>
 
-# ⛳️  知识空间简介
+后端:springboot(java), nest(js), unicloud(js)
 
-> 这里你可以介绍知识空间的主要内容和面向的成员群体。
+前端: react/vue, uniapp, taro, electron
 
-# ⭐️  常用文档和链接
+可实现:桌面应用, 小程序, app, web/h5.
 
-> 这里你可以将需要关注的文档链接粘贴在此处，方便成员快速访问。
+😘
 
-# 💡  知识空间帮助
+## 项目列表
 
-> 这里你可以添加知识库使用规范、操作流程、管理员联系方式等。
+待补充
 

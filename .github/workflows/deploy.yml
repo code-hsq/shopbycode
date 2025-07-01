@@ -23,12 +23,18 @@ jobs:
       FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
       FEISHU_SPACE_ID: ${{ secrets.FEISHU_SPACE_ID }}
     steps:
+      - name: Clean previous build
+        run: |
+          rm -rf .vitepress/dist  # 清除之前的构建产物
+
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Cache
       - uses: actions/cache@v3
         with:
           path: src/.cache
-          key: cache-dist
+          key: cache-dist-${{ github.sha }}
 
       - name: Cache dependencies
         uses: actions/cache@v3
