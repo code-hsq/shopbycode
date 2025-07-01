@@ -23,10 +23,6 @@ jobs:
       FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
       FEISHU_SPACE_ID: ${{ secrets.FEISHU_SPACE_ID }}
     steps:
-      - name: Clean previous build
-        run: |
-          rm -rf .vitepress/dist  # 清除之前的构建产物
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -46,6 +42,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20 #node版本
+
+      - name: Clean previous build
+        run: |
+          rm -rf .vitepress/dist  # 清除之前的构建产物
 
       - name: Install dependencies
         run: npm install
